@@ -1,3 +1,13 @@
+<script>
+import Header from './components/Header.vue';
+export default {
+  name: 'App',
+  components: {
+    Header,
+  },
+};
+</script>
+
 <template>
-  <h1>Hello Trading Journal</h1>
+  <Header></Header>
 </template>
