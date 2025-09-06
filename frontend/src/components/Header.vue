@@ -13,28 +13,29 @@
 </template>
 
 <style scoped>
-    header {
+    .header {
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        width: 100%;                 /* take full width */
-        padding: 1rem 2rem;          /* top/bottom + left/right spacing */
-        background-color: #1e293b;   /* dark blue-gray */
+        background-color: #2c3e50;
         color: white;
-
-        position: fixed;             /* stick to top */
-        top: 0;
-        left: 0;
-}
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
 
     nav a {
-        margin-left: 1rem;
-        text-decoration: none;
         color: white;
-}
+        margin-left: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
     nav a:hover {
-        color: #38bdf8;              /* light blue hover */
-}
+        text-decoration: underline;
+    }
 </style>
