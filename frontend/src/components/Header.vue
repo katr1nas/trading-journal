@@ -3,10 +3,10 @@
     <header>
         <h1>Trading Journal</h1>
         <nav>
-            <a href="#">Trades</a>
-            <a href="#">Dashboard</a>
-            <a href="#">Analytics</a>
-            <a href="#">Settings</a>
+            <router-link to="/">Dashboard</router-link>
+            <router-link to="/trades">Trades</router-link>
+            <router-link to="/analytics">Analytics</router-link>
+            <router-link to="/settings">Settings</router-link>
         </nav>
     </header>
     </div>
@@ -26,7 +26,7 @@
         padding: 10px 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-    }
+    } 
 
     nav a {
         color: white;
